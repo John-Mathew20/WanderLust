@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const methodOverride = require("method-override");
 const port = 9000;
-const url = "mongodb://127.0.0.1:27017/test";
+const url = "mongodb://localhost:27017/Wanderlust";
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
