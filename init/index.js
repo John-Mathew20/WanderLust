@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const initData = require("./data");
-const listing = require("../models/listening");
+const listing = require("../models/listing");
 const url = "mongodb://localhost:27017/Wanderlust";
 
 main()
