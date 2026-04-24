@@ -4,7 +4,12 @@
     <div class="col-8 offset-2">
       <br />
       <h3>Create a New Listing</h3>
-      <form action="/listings" method="post">
+      <form
+        action="/listings"
+        method="post"
+        novalidate
+        class="needs-validation"
+      >
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input
@@ -12,7 +17,10 @@
             placeholder="Enter Catchy title here...."
             type="text"
             class="form-control"
+            required
           />
+          <div class="valid-feedback">Looks Great!</div>
+          <div class="invalid-feedback">Something is Off !?</div>
         </div>
         <div class="mb-3">
           <label for="description" class="form-label">Description</label>
@@ -21,7 +29,10 @@
             placeholder="Enter description about your property...."
             type="text"
             class="form-control"
+            required
           ></textarea>
+          <div class="valid-feedback">Looks Great!</div>
+          <div class="invalid-feedback">Something is Off !?</div>
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Image</label>
@@ -31,6 +42,8 @@
             type="text"
             class="form-control"
           />
+          <div class="valid-feedback">We'll Add default Link ♥</div>
+          <div class="invalid-feedback">Something is Off !?</div>
         </div>
         <div class="row">
           <div class="mb-3 col-md-4">
@@ -40,7 +53,10 @@
               placeholder="1200"
               type="number"
               class="form-control"
+              required
             />
+            <div class="valid-feedback">Looks Great!</div>
+            <div class="invalid-feedback">Something is Off !?</div>
           </div>
           <div class="mb-3 col-md-8">
             <label for="country" class="form-label">Country</label>
@@ -49,7 +65,10 @@
               placeholder="India"
               type="text"
               class="form-control"
+              required
             />
+            <div class="valid-feedback">Looks Great!</div>
+            <div class="invalid-feedback">Something is Off !?</div>
           </div>
         </div>
         <div class="mb-3">
@@ -59,7 +78,10 @@
             placeholder="Goa"
             type="text"
             class="form-control"
+            required
           />
+          <div class="valid-feedback">Looks Great!</div>
+          <div class="invalid-feedback">Something is Off !?</div>
         </div>
         <button class="btn btn-dark add-btn">Submit</button>
         <br />
